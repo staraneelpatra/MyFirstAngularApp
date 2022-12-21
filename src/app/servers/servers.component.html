@@ -1,3 +1,4 @@
-<button class = 'btn btn-primary' [disabled] = '!allowNewServer'>New Server</button>
+<button class = 'btn btn-primary' [disabled] = '!allowNewServer' (click)="CreateNewServer()">New Server</button>
+<p>{{newServerCreated}}</p>
 <app-server></app-server>
-<app-server></app-server>
+<app-server></app-server> 

@@ -10,7 +10,7 @@ import { Component, OnInit } from '@angular/core';
 export class ServersComponent implements OnInit {
 
 allowNewServer : boolean = false;
-
+newServerCreated: string = "No new Server Created..."
 constructor() {
   
 setTimeout(() => {
@@ -20,5 +20,8 @@ setTimeout(() => {
 
 ngOnInit(){
   throw new Error('Method not implemented.');
+}
+CreateNewServer(){
+  this.newServerCreated = "New Server Created !"
 }
 }
