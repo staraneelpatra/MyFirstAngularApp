@@ -23,6 +23,6 @@ ngOnInit(){
   throw new Error('Method not implemented.');
 }
 CreateNewServer(){
-  this.newServerCreated = "New Server Created !"
+  this.newServerCreated = "New Server Created ! Server Name is " + this.serverName;
 }
 }
