@@ -1,4 +1,7 @@
 <button class = 'btn btn-primary' [disabled] = '!allowNewServer' (click)="CreateNewServer()">New Server</button>
 <p>{{newServerCreated}}</p>
+
+<input type="text" [(ngModel)]="serverName">
+<p>{{serverName}}</p>
 <app-server></app-server>
 <app-server></app-server> 
