@@ -1,6 +1,9 @@
 <input type="text" [(ngModel)]="serverName">
 <button class = 'btn btn-primary' [disabled] = '!allowNewServer' (click)="CreateNewServer()">New Server</button>
-<p>{{newServerCreated}}</p>
+<p *ngIf="isServerCreated; else noServer">{{newServerCreated}}</p>
+<ng-template #noServer>
+<p>No Server Created</p>
+</ng-template>
 <hr>
 <app-server></app-server>
 <app-server></app-server> 
