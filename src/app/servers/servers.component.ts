@@ -13,6 +13,7 @@ allowNewServer : boolean = false;
 newServerCreated : string = "No new Server Created...";
 serverName : string = '';
 isServerCreated :  boolean = false;
+servers  = ['TestServer1', 'TestServer2'];
 constructor() {  
 setTimeout(() => {
   this.allowNewServer =true;
@@ -24,6 +25,7 @@ ngOnInit(){
 }
 CreateNewServer(){
   this.isServerCreated = true;
+  this.servers.push(this.serverName);
   this.newServerCreated = "New Server Created ! Server Name is " + this.serverName;
 }
 }
