@@ -10,4 +10,10 @@ export class ServerComponent{
     currenttime(){
         return new Date();
     }
+     constructor() {
+        this.serverstatus = Math.random()>0.5 ? "Online" : "Offline";
+     }
+     getColor(){
+        return this.serverstatus === "Online" ? "lightgreen" : "pink";
+     }
 }
